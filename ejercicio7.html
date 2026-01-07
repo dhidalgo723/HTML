@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!--Ejercicio 2.7 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Actividad 2.7</title>
+    <style>
+        form label, form select  { display: block;}
+        form button { display: block; width: 100%; max-width: 300px}
+</style>
+</head>
+<body>
+    <header>
+        <h1><b>Actividad 2.7</b></h1>
+    </header>
+    <main>
+    <form action="envio.html">
+        <label for="name"> Nombre:
+        <input type="text" id="name" name="name" placeholder="Nombre" required>
+        </label>
+        <label for="age">Edad:
+        <input type="number" id="age" name="age" placeholder="Edad" min="18" required>
+        </label>
+        <label for="email">Email:
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        </label>
+        <label for="clave">Contraseña:
+        <input type="password" id="password" name="clave" placeholder="Contraseña" minlength="6" maxlength="12" required>
+        </label>
+        <label for="console">Elige tu consola:
+        <select id="console" name="console" multiple size="9">
+            <optgroup label="Consolas de Casa">
+                <!-- consolas de casa -->
+                 <option>PS5</option>
+                 <option>Xbox Series</option>
+                 <option>Xbox One</option>
+            </optgroup>
+            <optgroup label="Consolas portatiles">
+                <!-- consolas portatiles -->
+                 <option>Nintendo Swicth</option>
+                 <option>Nintendo DS</option>
+                 <option>Steam Deck</option>
+            </optgroup>
+        </select>
+    </label>
+        <label for="idioma">Escoge tu idioma
+            <input type="radio" id="spanish" name="idioma" unchecked/>Español
+            <input type="radio" id="catalan" name="idioma" unchecked/>Catalan
+            <input type="radio" id="english" name="idioma" unchecked/>Inglés
+        </label>
+        <label for="subs">
+            <input type="checkbox" id="subs" name="subs">¿Quieres recibir notificaciones en tu correo eléctronico sobre la actividad 2.7?
+        </label>
+        <p>Si tienes algun otro comentario que nos quieras enviar, puedes escribirlo aqui abajo</p>
+        <textarea placeholder="Escibe un comentario" cols="50" rows="7"></textarea>
+        <button type="submit" id="send" name="send" target="envio.html">Enviar</button>
+    </form>
+    </main>
+</body>
+</html>

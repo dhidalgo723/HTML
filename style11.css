@@ -1,0 +1,44 @@
+caption, table, td, th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+caption, table{
+    border: 1px, solid;
+    border-color: blue;
+    font-size: 14px;
+}
+
+th{
+    background-color: #279c90;
+    color: white;
+    text-transform: uppercase;
+}
+
+td:last-child{
+    font-weight: bold;
+}
+
+/* indica la posicion de el tr */
+tr:nth-child(odd){
+    background-color: blue;
+    color: white;
+}
+
+tr:nth-child(even){
+    color: blue;
+}
+
+/* indica la posicion */
+tr:nth-child(3){
+    background-color: blue;
+    color: white;
+}
+
+caption:hover{
+    color: rgb(253, 16, 16);
+}
+
+caption::selection{
+    color: darkviolet;
+}
