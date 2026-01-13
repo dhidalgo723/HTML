@@ -87,8 +87,20 @@ td {
   padding: 10px;
 }
 
-img {
-  width: 100px;
+.buscaminas > img {
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 150px;
   margin: 5px;
-  display: inline;
+}
+
+.memory > img {
+  width: 150px;
+  margin: 5px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.bloque {
+  display: block;
 }
